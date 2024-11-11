@@ -17,70 +17,58 @@
     <title>Quesos de los campos</title>
   </head>
   <body>
-    <nav>
+    <nav class="navbar">
       <div id="navegacion">
         <h2>Quesos de los campos</h2>
       </div>
     </nav>
 
-    <div>
+    <div class="text-center">
       <p>
-        En quesos de los campos podras encontrar el queso más fresco y mejor
-        servido de la región
+        En Quesos de los Campos podrás encontrar el queso más fresco y mejor
+        servido de la región.
       </p>
-      <h3>¡Encuentranos!</h3>
-      <div>
-        <div class="mapouter">
-          <div class="gmap_canvas">
-            <iframe
-              id="gmap_canvas"
+    </div>
+    <div>
+      <div class="container overflow row gx-5" id="ubicacion_mapa">
+        <h3 id="cabecera_ubicacion">¡Encuéntranos!</h3>
+        <div class="col">
+          <div id="ubicacion" class="row shadow p-3 mb-5 bg-body-tertiary rounded">
+            <div class="col p-3 mb-2">
+              <img src="/static/img/placeholder.png" alt="Ubicación" id="pin">
+            </div>
+            <div class="col-sm-9 p-3">
+              <h3 id="avenida">Av. Fedor Dostoyevzki</h3>
+              <div id="otros_datos">
+                <p>Local 303-E Col, Chihuahua 2000</p>
+                <p>Chihuahua, Chih.,31136 , México</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col shadow p-3 mb-5 bg-body-tertiary rounded">
+          <div id="gmap_canvas">
+            <iframe id="map"
               src="https://maps.google.com/maps?q=Quesos+de+los+Campos+-+Quesos+y+Jugos+Naturales+Chihuahua&t=&z=13&ie=UTF8&iwloc=&output=embed"
               frameborder="0"
               scrolling="no"
               marginheight="0"
-              marginwidth="0"
-            >
+              marginwidth="0">
             </iframe>
           </div>
-        </div>
-        <div class="input-group mb-3">
-          <span class="input-group-text" id="inputGroup-sizing-default"
-            >Default</span
-          >
-          <input
-            type="text"
-            class="form-control"
-            aria-label="Sizing example input"
-            aria-describedby="inputGroup-sizing-default"
-          />
-
-          
         </div>
       </div>
     </div>
 
-    <div>
+    <div id="caja_comentarios">
       <h3>Nos interesa escucharte. ¡Deja un comentario!</h3>
       <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label"
-          >Direccion de correo</label
-        >
-        <input
-          type="email"
-          class="form-control"
-          id="exampleFormControlInput1"
-          placeholder="name@example.com"
-        />
+        <label for="exampleFormControlInput1" class="form-label">Dirección de correo</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
       </div>
       <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label"
-          >Comentario</label
-        >
-        <textarea
-          class="form-control"
-          id="exampleFormControlTextarea1"
-          rows="3"
-        ></textarea>
+        <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
       </div>
     </div>
   </body>
