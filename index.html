@@ -29,13 +29,16 @@
         servido de la región.
       </p>
     </div>
-    <div>
+    <div style="text-align: -webkit-center">
       <div class="container overflow row gx-5" id="ubicacion_mapa">
         <h3 id="cabecera_ubicacion">¡Encuéntranos!</h3>
         <div class="col">
-          <div id="ubicacion" class="row shadow p-3 mb-5 bg-body-tertiary rounded">
+          <div
+            id="ubicacion"
+            class="row shadow p-3 mb-5 bg-body-tertiary rounded"
+          >
             <div class="col p-3 mb-2">
-              <img src="/static/img/placeholder.png" alt="Ubicación" id="pin">
+              <img src="/static/img/placeholder.png" alt="Ubicación" id="pin" />
             </div>
             <div class="col-sm-9 p-3">
               <h3 id="avenida">Av. Fedor Dostoyevzki</h3>
@@ -48,27 +51,53 @@
         </div>
         <div class="col shadow p-3 mb-5 bg-body-tertiary rounded">
           <div id="gmap_canvas">
-            <iframe id="map"
+            <iframe
+              id="map"
               src="https://maps.google.com/maps?q=Quesos+de+los+Campos+-+Quesos+y+Jugos+Naturales+Chihuahua&t=&z=13&ie=UTF8&iwloc=&output=embed"
               frameborder="0"
               scrolling="no"
               marginheight="0"
-              marginwidth="0">
+              marginwidth="0"
+            >
             </iframe>
           </div>
         </div>
       </div>
     </div>
-
-    <div id="caja_comentarios">
-      <h3>Nos interesa escucharte. ¡Deja un comentario!</h3>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Dirección de correo</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Comentario</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <!-- Caja de comentarios -->
+    <div style="text-align: -webkit-center">
+      <div id="caja_comentarios">
+        <h3>Nos interesa escucharte. ¡Deja un comentario!</h3>
+        <div class="shadow p-3 mb-5 bg-body-tertiary rounded">
+          <div class="mb-3">
+            <form action="" method="post">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Dirección de correo</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Comentario</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+              </div>
+              <div>
+                <button type="submit" class="btn btn-outline-primary">
+                  Enviar
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   </body>
